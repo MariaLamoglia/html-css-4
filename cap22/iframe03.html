@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 95vw;
+            height: 450px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat cupiditate doloremque id. Iusto placeat fugiat repellat! Odio optio tempore reiciendis ullam tenetur magnam, totam accusantium quibusdam, pariatur omnis incidunt.</p>
+
+    <ul>
+        <li><a href="testes/teste01.html" target="frame">Primeira Página</a></li>
+        <li><a href="testes/teste02.html" target="frame">Segunda Página</a></li>
+        <li><a href="testes/teste03.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellat minima maxime iusto tenetur labore animi non magni et cum, quas porro quisquam sed voluptatem impedit, aliquam eius rerum nam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro eum illo, natus aliquam minima ipsam tenetur impedit modi quas sunt non, deleniti voluptatibus dolorem maxime error ab quasi nihil libero.</p>
+
+    <!-- O 'srcdoc' AJUDA O IFRAME A NÃO FICAR EM BRANCO ATÉ A PESSOA ESCOLHER OS LINKS -->
+    <!-- O USO DE 'sandbox' E 'referrerpolicy' AJUDAM O IFRAME A FICAR MAIS SEGURO QUANDO SE TRATA DE CADASTRO ETC-->
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima!</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repellat minima maxime iusto tenetur labore animi non magni et cum, quas porro quisquam sed voluptatem impedit, aliquam eius rerum nam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro eum illo, natus aliquam minima ipsam tenetur impedit modi quas sunt non, deleniti voluptatibus dolorem maxime error ab quasi nihil libero.</p><img src='imagens/bugdroid.png'>">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, dolores obcaecati iusto quibusdam et ratione placeat quisquam ipsa non dolore? Velit aspernatur, officiis illo minima deleniti rerum vel culpa fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda repellat deserunt et laboriosam earum. Amet, dicta accusantium qui quos odit eos molestiae quae debitis, recusandae sapiente ipsam perspiciatis eveniet magni.</p>
+</body>
+</html>
